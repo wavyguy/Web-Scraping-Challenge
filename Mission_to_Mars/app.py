@@ -8,7 +8,6 @@ app = Flask(__name__)
 # Pymongo Connection 
 mongo = PyMongo(app, uri="mongodb://localhost:27017/mission_mars")
 
-
 # Route 
 @app.route("/")
 
