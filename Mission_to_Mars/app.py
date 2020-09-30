@@ -29,8 +29,6 @@ def scrape():
     # Run Scrape 
     mars_data = scrape_mars.scrape_info()
  
-
-
     # Update the Mongo Database
     mongo.db.collection.update({}, mars_data, upsert=True)
 
